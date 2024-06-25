@@ -1,7 +1,6 @@
 .banner {
     width: 100%; /* 1920px x 347px */
     height: 347px;
-    /* background-image: url('/src/components/Banner/images/banner-home.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
