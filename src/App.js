@@ -1,5 +1,6 @@
 import Banner from "./components/Banner";
 import Card from "./components/Card";
+import Category from "./components/Category";
 import Container from "./components/Container";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -13,12 +14,18 @@ function App() {
       <Header />
       <Banner image={bannerHome} />
       <Container>
-        <h2>Categoria generica</h2>
-        <section className="cards-container">
-          {videos.map((item) => (
-            <Card key={item.id} id={item.id} />
-          ))}
-        </section>
+        {
+          /* Lógica para agrupar os vídeos por categoria */
+          Array.from(new Set(videos.map((item) => item.category))).map((category) => (
+            <Category key={category} category={category}>
+              {videos
+                .filter((video) => video.category === category)
+                .map((item) => (
+                  <Card key={item.id} id={item.id} />
+                ))}
+            </Category>
+          ))
+        }
       </Container>
       <Footer />
     </div>
