@@ -2,12 +2,13 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Container from "./components/Container";
+import homeImagen from "./components/Banner/images/banner-assistir.png"
 
 function App() {
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner image={homeImagen}/>
       <Container>
         <h1>Hello Word!</h1>
         <p>Dale familia</p>
