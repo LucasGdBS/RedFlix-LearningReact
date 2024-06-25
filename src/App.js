@@ -3,7 +3,7 @@ import Card from "./components/Card";
 import Container from "./components/Container";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import db from "./json/db.json";
+import videos from "./json/videos.json";
 
 import bannerHome from "./components/Banner/images/banner-home.png";
 
@@ -15,7 +15,7 @@ function App() {
       <Container>
         <h2>Categoria generica</h2>
         <section className="cards-container">
-          {db.map((item) => (
+          {videos.map((item) => (
             <Card key={item.id} id={item.id} />
           ))}
         </section>
