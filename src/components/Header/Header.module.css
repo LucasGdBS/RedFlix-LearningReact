@@ -22,3 +22,7 @@
   color: #fff;
   padding-inline: 18px;
 }
+
+.header a:hover {
+  color: #f44336;
+}
