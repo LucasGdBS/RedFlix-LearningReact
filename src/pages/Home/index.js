@@ -8,10 +8,12 @@ import Carousel from "../../components/Carousel";
 import videos from "../../json/videos.json";
 
 import bannerHome from "../../components/Banner/images/banner-home.png";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
 
 function Home() {
   return (
     <div>
+      <ScrollToTopButton />
       <Header />
       <Banner image={bannerHome} />
       <Container>
