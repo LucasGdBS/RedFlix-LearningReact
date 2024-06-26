@@ -3,6 +3,8 @@
     min-height: 92.7vh;
     background-color: #191919;
     color: #fff;
-    padding-block: 1rem;
+    padding-bottom: 1.5rem;
     text-align: center;
+    overflow: hidden;
+    padding-inline: 1.5rem;
 }
