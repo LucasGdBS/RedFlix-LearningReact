@@ -3,9 +3,13 @@
   flex-direction: column;
 }
 
-.category div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+.category h2 {
+  padding-block: 1rem;
+}
+
+.category div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
