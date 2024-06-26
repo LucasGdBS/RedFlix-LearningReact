@@ -1,0 +1,24 @@
+.container{
+    padding-top: 68px;
+}
+
+.container h1{
+    font-size: 180px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.container p{
+    font-size: 20px;
+    margin: 1;
+    padding: 0;
+    font-weight: 500;
+}
+
+.container a{
+    color: #b71c1c;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
